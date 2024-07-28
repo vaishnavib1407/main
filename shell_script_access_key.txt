@@ -1,0 +1,6 @@
+#!/bin/bash
+access_key="xyz"
+secret_key="vbn"
+main="/root/test/main.tf"
+sed -i "s#access_key = \"\"#access_key = \"${access_key}\"#g" "$main"
+sed -i "s#secret_key = \"\"#secret_key = \"${secret_key}\"#g" "$main"
